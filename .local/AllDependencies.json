@@ -3884,15 +3884,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Steven\\.nuget\\packages\\": {}
+    "C:\\Users\\rafab\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "FacebookMigration",
       "projectName": "FacebookMigration",
-      "projectPath": "C:\\Users\\Steven\\Documents\\GitHub\\Proy-Sistemas-Colaborativos\\.local",
-      "packagesPath": "C:\\Users\\Steven\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Steven\\Documents\\GitHub\\Proy-Sistemas-Colaborativos\\.local"
+      "projectPath": "C:\\Users\\rafab\\OneDrive\\Documents\\GitHub\\Proy-Sistemas-Colaborativos\\.local",
+      "packagesPath": "C:\\Users\\rafab\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rafab\\OneDrive\\Documents\\GitHub\\Proy-Sistemas-Colaborativos\\.local"
     },
     "frameworks": {
       "net461": {

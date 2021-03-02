@@ -169,7 +169,7 @@
                                 </OutArgument>
                               </ui:GetPassword.Result>
                             </ui:GetPassword>
-                            <ui:TypeInto DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" ClickBeforeTyping="True" DelayBefore="2000" DisplayName="Escribir en 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_10">
+                            <ui:TypeInto DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" ClickBeforeTyping="True" DelayBefore="5000" DisplayName="Escribir en 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_10">
                               <ui:TypeInto.Target>
                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b4eb1073-809c-47fe-9ff0-34b109c3d040" InformativeScreenshot="3588f95be3970c4a0b29ac9010e1b2ab" Selector="&lt;webctrl tag='INPUT' type='password' /&gt;">
                                   <ui:Target.TimeoutMS>
