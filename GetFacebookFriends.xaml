@@ -3,7 +3,7 @@
     <x:Property Name="OutContactDatatable" Type="OutArgument(sd:DataTable)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1097,2026</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1097,2522</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -76,32 +76,36 @@
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetFacebookFriends" sap:VirtualizedContainerService.HintSize="628,1861" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetFacebookFriends" sap:VirtualizedContainerService.HintSize="628,2357" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ContactEmail" />
       <Variable x:TypeArguments="x:String" Name="ContactFullName" />
       <Variable x:TypeArguments="x:String" Name="ContactFirstName" />
       <Variable x:TypeArguments="x:String" Name="ContactLastName" />
+      <Variable x:TypeArguments="x:String" Name="ContactBirthYear" />
+      <Variable x:TypeArguments="x:String" Name="ContactBirthdate" />
+      <Variable x:TypeArguments="x:String" Name="ContactBirthMonth" />
+      <Variable x:TypeArguments="x:String" Name="ContactBirthDay" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BuildDataTable DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="586,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Email&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;First_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Last_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Email /&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
+    <ui:BuildDataTable DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="586,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Email&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;First_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Last_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;BirthDay&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;BirthMonth&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;BirthYear&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Email /&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
       <ui:BuildDataTable.DataTable>
         <OutArgument x:TypeArguments="sd:DataTable">
           <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">OutContactDatatable</mca:CSharpReference>
         </OutArgument>
       </ui:BuildDataTable.DataTable>
     </ui:BuildDataTable>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Anexar navegador 'chrome.exe  Facebook'" sap:VirtualizedContainerService.HintSize="586,1670" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="3952a095daaf294a3975f319791d34bc" Selector="&lt;html app='chrome.exe' title='Facebook' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Anexar navegador 'chrome.exe  Facebook'" sap:VirtualizedContainerService.HintSize="586,2166" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="3952a095daaf294a3975f319791d34bc" Selector="&lt;html app='chrome.exe' title='Facebook' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="552,1524" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="552,2020" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -129,13 +133,13 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe (2)'" sap:VirtualizedContainerService.HintSize="510,1286" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="72db861b31f3e45314ac8df183ba4179" Selector="&lt;html app='chrome.exe' title='(2) Raul Fernandez | Facebook' /&gt;">
+            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe (2)'" sap:VirtualizedContainerService.HintSize="510,1782" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="72db861b31f3e45314ac8df183ba4179" Selector="&lt;html app='chrome.exe' title='(2) Raul Fernandez | Facebook' /&gt;">
               <ui:BrowserScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,1140" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,1636" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -163,13 +167,13 @@
                         </ui:Target>
                       </ui:Click.Target>
                     </ui:Click>
-                    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe (2)'" sap:VirtualizedContainerService.HintSize="434,902" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="61c044364431196dc476b67c5677e121" Selector="&lt;html app='chrome.exe' title='(2) Raul Fernandez | Facebook' /&gt;">
+                    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe (2)'" sap:VirtualizedContainerService.HintSize="434,1398" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="61c044364431196dc476b67c5677e121" Selector="&lt;html app='chrome.exe' title='(2) Raul Fernandez | Facebook' /&gt;">
                       <ui:BrowserScope.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,756" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1252" sap2010:WorkflowViewState.IdRef="Sequence_2">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -231,7 +235,7 @@
                                 </OutArgument>
                               </ui:GetValue.Value>
                             </ui:GetValue>
-                            <ui:InvokeCode ContinueOnError="{x:Null}" Code="var fullNameArray = fullName.Split(' ');&#xD;&#xA;firstName = fullNameArray[0];&#xD;&#xA;lastName = fullNameArray[1];" DisplayName="Invoke code" sap:VirtualizedContainerService.HintSize="334,164" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
+                            <ui:InvokeCode ContinueOnError="{x:Null}" Code="var fullNameArray = fullName.Split(' ');&#xA;firstName = fullNameArray[0];&#xA;lastName = fullNameArray[1];" DisplayName="Invoke code" sap:VirtualizedContainerService.HintSize="334,164" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
                               <ui:InvokeCode.Arguments>
                                 <InArgument x:TypeArguments="x:String" x:Key="fullName">
                                   <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">ContactFullName</mca:CSharpValue>
@@ -250,10 +254,57 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:InvokeCode>
+                            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'SPAN'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_3">
+                              <ui:GetValue.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5f4b1d87-3e20-44cb-9452-e30dc7e2a409" InformativeScreenshot="850aebba0de5f940680cc5a35b1cba88" Selector="&lt;webctrl aaname='3 de febrero' tag='SPAN' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:GetValue.Target>
+                              <ui:GetValue.Value>
+                                <OutArgument x:TypeArguments="x:String">
+                                  <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">ContactBirthdate</mca:CSharpReference>
+                                </OutArgument>
+                              </ui:GetValue.Value>
+                            </ui:GetValue>
+                            <ui:InvokeCode ContinueOnError="{x:Null}" Code="var date = InStrDate.Split(' ');&#xD;&#xA;OutBirthDay = date[0];&#xD;&#xA;var month = date[2];&#xD;&#xA;switch(month){&#xD;&#xA;&#x9;case &quot;enero&quot;:&#xD;&#xA;&#x9;&#x9;OutBirthMonth = &quot;Jan&quot;;&#xD;&#xA;&#x9;&#x9;break;&#xD;&#xA;&#x9;case &quot;febrero&quot;:&#xD;&#xA;&#x9;&#x9;OutBirthMonth = &quot;Feb&quot;;&#xD;&#xA;&#x9;&#x9;break;&#xD;&#xA;&#x9;case &quot;marzo&quot;:&#xD;&#xA;&#x9;&#x9;OutBirthMonth = &quot;Mar&quot;;&#xD;&#xA;&#x9;&#x9;break;&#xD;&#xA;&#x9;case &quot;abril&quot;:&#xD;&#xA;&#x9;&#x9;OutBirthMonth = &quot;Apr&quot;;&#xD;&#xA;&#x9;&#x9;break;&#xD;&#xA;&#x9;case &quot;mayo&quot;:&#xD;&#xA;&#x9;&#x9;OutBirthMonth = &quot;May&quot;;&#xD;&#xA;&#x9;&#x9;break;&#xD;&#xA;&#x9;case &quot;junio&quot;:&#xD;&#xA;&#x9;&#x9;OutBirthMonth = &quot;Jun&quot;;&#xD;&#xA;&#x9;&#x9;break;&#xD;&#xA;&#x9;case &quot;julio&quot;:&#xD;&#xA;&#x9;&#x9;OutBirthMonth = &quot;Jul&quot;;&#xD;&#xA;&#x9;&#x9;break;&#xD;&#xA;&#x9;case &quot;agosto&quot;:&#xD;&#xA;&#x9;&#x9;OutBirthMonth = &quot;Aug&quot;;&#xD;&#xA;&#x9;&#x9;break;&#xD;&#xA;&#x9;case &quot;septiembre&quot;:&#xD;&#xA;&#x9;&#x9;OutBirthMonth = &quot;Sep&quot;;&#xD;&#xA;&#x9;&#x9;break;&#xD;&#xA;&#x9;case &quot;octubre&quot;:&#xD;&#xA;&#x9;&#x9;OutBirthMonth = &quot;Oct&quot;;&#xD;&#xA;&#x9;&#x9;break;&#xD;&#xA;&#x9;case &quot;noviembre&quot;:&#xD;&#xA;&#x9;&#x9;OutBirthMonth = &quot;Nov&quot;;&#xD;&#xA;&#x9;&#x9;break;&#xD;&#xA;&#x9;case &quot;diciembre&quot;:&#xD;&#xA;&#x9;&#x9;OutBirthMonth = &quot;Dec&quot;;&#xD;&#xA;&#x9;&#x9;break;&#xD;&#xA;}" DisplayName="Invoke code" sap:VirtualizedContainerService.HintSize="334,164" sap2010:WorkflowViewState.IdRef="InvokeCode_2" Language="CSharp">
+                              <ui:InvokeCode.Arguments>
+                                <InArgument x:TypeArguments="x:String" x:Key="InStrDate">
+                                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">ContactBirthdate</mca:CSharpValue>
+                                </InArgument>
+                                <OutArgument x:TypeArguments="x:String" x:Key="OutBirthDay">
+                                  <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">ContactBirthDay</mca:CSharpReference>
+                                </OutArgument>
+                                <OutArgument x:TypeArguments="x:String" x:Key="OutBirthMonth">
+                                  <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">ContactBirthMonth</mca:CSharpReference>
+                                </OutArgument>
+                              </ui:InvokeCode.Arguments>
+                            </ui:InvokeCode>
+                            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'SPAN'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_4">
+                              <ui:GetValue.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="72e5d947-a5df-40dd-8d20-fb6b07e56752" InformativeScreenshot="ac7c2bf9b49dfd399edf40ddf7cb4e71" Selector="&lt;webctrl aaname='1996' tag='SPAN' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:GetValue.Target>
+                              <ui:GetValue.Value>
+                                <OutArgument x:TypeArguments="x:String">
+                                  <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_12">ContactBirthYear</mca:CSharpReference>
+                                </OutArgument>
+                              </ui:GetValue.Value>
+                            </ui:GetValue>
                             <ui:AddDataRow DataRow="{x:Null}" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
                               <ui:AddDataRow.ArrayRow>
                                 <InArgument x:TypeArguments="s:Object[]">
-                                  <mca:CSharpValue x:TypeArguments="s:Object[]" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">new string[] {ContactEmail, ContactFirstName, ContactLastName};</mca:CSharpValue>
+                                  <mca:CSharpValue x:TypeArguments="s:Object[]" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">new string[] {ContactEmail, ContactFirstName, ContactLastName, ContactBirthDay, ContactBirthMonth, ContactBirthYear};</mca:CSharpValue>
                                 </InArgument>
                               </ui:AddDataRow.ArrayRow>
                               <ui:AddDataRow.DataTable>
