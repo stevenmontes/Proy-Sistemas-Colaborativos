@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="OpenFacebookInBrowser" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1130.4,614.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="OpenFacebookInBrowser" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1208,1212.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -97,7 +97,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Anexar navegador 'chrome.exe Facebook'" sap:VirtualizedContainerService.HintSize="433.6,760" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="3617712501ab2611cf16097c96556532" Selector="&lt;html app='chrome.exe' title='Facebook - Inicia sesión o regístrate' /&gt;">
+            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Anexar navegador 'chrome.exe Facebook'" sap:VirtualizedContainerService.HintSize="433.6,760" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="a8537ff684b7dff8f105e0aaa9af2691" Selector="&lt;html app='chrome.exe' title='Facebook - Log In or Sign Up' /&gt;">
               <ui:BrowserScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
@@ -114,7 +114,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                     <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  email'" EmptyField="True" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_5" Text="rbricenoa@ucenfotec.ac.cr">
                       <ui:TypeInto.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="abad62e6-976c-423a-b176-dad0835e24ea" InformativeScreenshot="a8596eb0e5981f3317d5a95529882349" Selector="&lt;webctrl tag='INPUT' type='text' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="abad62e6-976c-423a-b176-dad0835e24ea" InformativeScreenshot="c941bf290bd0821d1ad7bb3d02754590" Selector="&lt;webctrl tag='INPUT' type='text' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -124,7 +124,7 @@
                         </ui:Target>
                       </ui:TypeInto.Target>
                     </ui:TypeInto>
-                    <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="GetPassword_2" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk+gVD3wgg0u3GJ48ijNxTgAAAAACAAAAAAAQZgAAAAEAACAAAADKtpn0q66AiaX79CY/bVCfw/tjXlOm77BAY/e5jd0/zQAAAAAOgAAAAAIAACAAAACP5u+F/yu5qtfr4TZHS2az+xAM7gpyFBx6T83mIJ3jwRAAAAAn0MMLpnfeTYlkO64cMc8aQAAAAK0dvjTKGAT367FsTHmCtDfru0WhfZVGlZpjIZYe8bBBF1QNta8m5uMJykuC6/rme9AI9KrOk77wpP5LrGEsQHk=">
+                    <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="GetPassword_2" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAD74ypi5FKEeUHRWEg7lFjAAAAAACAAAAAAAQZgAAAAEAACAAAABwiMwwP5utQdMQH0srMCzo6C87puuV/xJxL+o7WmM0EgAAAAAOgAAAAAIAACAAAAARHijPIs4x+iye8fGo22aFKTB5b5nXGzdDisCHurm/kBAAAADNgkS0gmZxqK5JCAKptQ9wQAAAAI8MsKwyhltZD+ktPX6KWPw3Hp8Coy16d5euCLL2ZSHsLR404F9+52I2T1GjFcYZhCRNfpDlIXnmLEUdfxBB75M=">
                       <ui:GetPassword.Result>
                         <OutArgument x:TypeArguments="x:String">
                           <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">Password</mca:CSharpReference>
@@ -133,7 +133,7 @@
                     </ui:GetPassword>
                     <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  pass'" EmptyField="True" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_6">
                       <ui:TypeInto.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e39f76bb-f129-4bdb-8fb7-7b2664dcdc70" InformativeScreenshot="c6142fbdcd308cd9e473dc62569e6c54" Selector="&lt;webctrl tag='INPUT' type='password' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e39f76bb-f129-4bdb-8fb7-7b2664dcdc70" InformativeScreenshot="5ea3bd6ef7511d46dbfb8944c93da5ef" Selector="&lt;webctrl tag='INPUT' type='password' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
