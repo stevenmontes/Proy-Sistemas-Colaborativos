@@ -4,7 +4,7 @@
     <x:Property Name="InContactDatatable" Type="InArgument(sd:DataTable)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1097,853</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>654,645</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -83,7 +83,7 @@
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ExcelFilePath">
         <Variable.Default>
-          <Literal x:TypeArguments="x:String">C:\Users\Steven\Documents\UiPath\FacebookMigration\ContactData.xlsx</Literal>
+          <Literal x:TypeArguments="x:String">C:\Documentos-Colaborativos\ContactData.xlsx</Literal>
         </Variable.Default>
       </Variable>
     </Sequence.Variables>
