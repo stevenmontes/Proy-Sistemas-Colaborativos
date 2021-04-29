@@ -5674,15 +5674,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jobre\\.nuget\\packages\\": {}
+    "C:\\Users\\Steven\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "FacebookMigration",
       "projectName": "FacebookMigration",
-      "projectPath": "C:\\Users\\jobre\\Documents\\UiPath\\Proy-Sistemas-Colaborativos\\.local",
-      "packagesPath": "C:\\Users\\jobre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jobre\\Documents\\UiPath\\Proy-Sistemas-Colaborativos\\.local"
+      "projectPath": "C:\\Users\\Steven\\Documents\\GitHub\\Proy-Sistemas-Colaborativos\\.local",
+      "packagesPath": "C:\\Users\\Steven\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Steven\\Documents\\GitHub\\Proy-Sistemas-Colaborativos\\.local"
     },
     "frameworks": {
       "net461": {
@@ -5713,7 +5713,7 @@
             "version": "[20.10.8, 20.10.8]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\jobre\\AppData\\Local\\UiPath\\app-21.2.0-beta0044\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Steven\\AppData\\Local\\UiPath\\app-21.2.0-beta0044\\runtime.json"
       }
     }
   }

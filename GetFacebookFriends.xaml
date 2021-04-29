@@ -3,7 +3,7 @@
     <x:Property Name="OutContactDatatable" Type="OutArgument(sd:DataTable)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1259,4728</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1097,4728</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -129,7 +129,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f15092f9-0f97-4763-9e71-08f01e45ccc4" InformativeScreenshot="a343a0776fb41753a797f4ad1aef7cfe" Selector="&lt;webctrl aaname='Raul Fernandez' tag='SPAN' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f15092f9-0f97-4763-9e71-08f01e45ccc4" InformativeScreenshot="32fbdd69262a5232eeccdf1c25e9c6a2" Selector="&lt;webctrl aaname='Raul Fernandez' tag='SPAN' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
